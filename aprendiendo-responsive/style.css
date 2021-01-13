@@ -43,7 +43,7 @@ aside {
 }
 
 #articles article {
-	width: 20%;
+	width: 27%;
 	height: 150px;
 	background: lightgreen;
 	color: white;
@@ -51,5 +51,54 @@ aside {
 	text-align: center;
 	border: 2px solid white;
 	float: left;
-	margin: 30px;
+	margin: 15px;
+}
+
+/*RESPONSIVE CON MEDIAQUERIES*/
+
+/*Desde la anchura 0px hasta la 920px va a haber unos estilos*/
+@media (max-width: 1002px) {
+	/*Se ejecturan estos estilos*/
+
+	#articles article {
+		width: 40%;
+		background: red;
+	}
+}
+
+/*Desde la anchura 0px hasta la 720px va a haber unos estilos*/
+@media (max-width: 720px) {
+	/*Se ejecturan estos estilos*/
+
+	#articles article {
+		width: 90%;
+		background: blue;
+	}
+}
+
+/*Desde la anchura 0px hasta la 720px va a haber unos estilos*/
+@media (max-width: 590px) {
+	/*Se ejecturan estos estilos*/
+
+	#container {
+		overflow: hidden;
+	}
+
+	header {
+		width: 100%;
+		height: 150px;
+		background: lightblue;
+		color: #333;
+		font-size: 17px;
+		line-height: 75px;
+		text-align: center;
+	}
+
+	aside {
+		display: none;
+	}
+
+	#articles {
+		width: 100%;
+	}
 }
