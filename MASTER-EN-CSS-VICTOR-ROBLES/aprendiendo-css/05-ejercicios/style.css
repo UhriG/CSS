@@ -1,0 +1,158 @@
+/*
+    EJERCICIO COMPLETO CON HTML Y CSS
+    1. Crear un documento HTML y vincularlo con un CSS
+    2. Crear una estructura HTML que cuente con un CONTENTEDOR GENERAL, CABECERA, MENU, BARRA LATERAL,
+    SECCION DE CONTENIDO PRINCIPAL, ELEMETOS DENTRO DEL CONTENEDOR PRINCIPAL Y UN FOOTER.
+    3. Todo el contenido debe estar dentro del contenedor general, y su ancho será de 1200px 
+    y estar centrado
+    4. El header debe ocupar el 100% del ancho y tener un texto grande centrado.
+    5. El menú debe tener los elementos uno al lado del otro.
+    6. El contenido principal debe tener un ancho del 70%
+    7. El contenido dentro del contenedor principal debe ser una cuadricula con cuatro lineas de 2 cajas.
+    8. La barra lateral debe tener un ancho de 30%
+    9. El footer debe tener un ancho de 100% del div que lo contiene y estar abajo de todo.
+
+*/
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+a{
+    text-decoration: none;
+}
+
+#principal{
+    width: 1200px;
+    border: 1px solid #ccc;
+    margin: 0px auto;
+    margin-top: 20px;
+}
+
+#header{
+    width: 100%;
+    height: 100px;
+    background: royalblue;
+    text-align: center;
+    color: white;
+    line-height: 90px;    
+}
+
+#menu{
+    margin: 0px auto;
+    width: 100%;
+    background-color: #eee;
+}
+
+#menu ul li{
+    display: block;
+    list-style-type: none;
+    border-right: 1px solid #ccc;
+    float: left;
+}
+
+#menu ul li a{
+    display: block;
+    color: #444;    
+    padding: 15px;
+}
+
+#menu ul li:hover{
+    background: rgb(38, 73, 175);
+    cursor: pointer;
+}
+
+#menu ul li:hover a{    
+    color: white;
+}
+
+#sidebar{
+    width: 29%;
+    float: left;
+    border: 1px solid royalblue;
+    min-height: 500px;
+    max-height: 650px;
+    text-align: center;
+    overflow-y: scroll;
+}
+
+#main{
+    width: 70%;
+    float: left;
+}
+
+#footer{
+    width: 100%;
+    background: #eee;
+    text-align: center;
+    color: #444;
+    height: 60px;
+    line-height: 60px;
+    border-top: 1px solid #ccc;
+}
+
+#main .caja{
+    position: relative;
+    border: 1px solid rgb(28, 26, 143);
+    background-color: royalblue;
+    color: white;
+    width: 40%;
+    height: 250px;
+    margin: 20px;
+    float: left;
+    margin-left: 40px;
+    text-align: center;
+    line-height: 250px;
+    text-transform: uppercase;
+    box-shadow: 2px 2px 5px black;
+    border-radius: 25px 25px 10px 10px; /*ORDEN: ARRIBA IZQ, ARRIBA DER, ABAJO DER, ABAJO IZQ*/
+}
+
+#main > h1{
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+    padding: 15px;
+    color: #444;
+    text-shadow: 1px 1px 2px gray; /*ORDEN SOMBRA: Eje x, Eje y, Difuminado, Color*/
+}
+
+.clearfix{
+    float: none;
+    clear: both;
+}
+
+.sombra-interior{
+    box-shadow: 2px 2px 5px black inset !important; /*inset: sombra interior*/
+}
+
+.libre{
+    position: absolute;
+    top: 500px;
+    right: 63%;
+    border: 1px solid black;
+    background-color: red;
+    color: white;
+    width: 50px;
+    height: 50px;
+    font-size: 12px;
+}
+
+.libre2{
+    background-color: green;
+    top: 475px;
+    right: 63%;
+    z-index: -1;
+}
+
+.fija{
+    position: fixed;
+    top: 50%;
+    right: 0px;
+    border: 1px solid black;
+    background-color: blue;
+    color: white;
+    width: 50px;
+    height: 50px;
+    font-size: 12px;
+}

@@ -1,0 +1,51 @@
+*{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+ul li{
+    font-size: 20px;
+}
+
+ul li:first-child{
+    color: red;
+    font-weight: bold;
+}
+
+ul li:nth-child(2){
+    color: blue;
+}
+
+ul li:last-child{
+    color: chocolate;
+}
+
+#mi-enlace{
+    font-size: 30px;
+    color: salmon;
+}
+
+#mi-enlace:link{ /*LINK: propiadades para cuando no se ha hecho click al enlance todavia*/
+    color: red;
+}
+
+#mi-enlace:visited{ /*VISITED: propiedades para cuando ya he visitado el enlace*/
+    color: seagreen;
+}
+
+#mi-enlace:hover{
+    color: black;
+    cursor: pointer;
+}
+
+#mi-enlace:active{ /*ACTIVE: propiedades para cuando estoy haciendo click sobre el elemento*/
+    color:blueviolet;
+}
+
+input[type="text"]{
+    margin-top: 20px;
+    padding: 10px;
+}
+
+input[type="text"]:focus{ /*FOCUS: propieades cuando estoy haciendo foco a ese elemento*/
+    border: 2px dashed blue;
+}
