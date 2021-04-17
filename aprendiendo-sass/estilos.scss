@@ -1,0 +1,17 @@
+$fuente-principal: sans-serif, Helvetica, Arial;
+$color-fondo: #eee;
+$color-letra: blue;
+$color-secundario: rgb(156, 23, 96);
+
+body {
+	background-color: $color-fondo;
+}
+
+h1 {
+	color: $color-letra;
+	font-family: $fuente-principal;
+}
+
+p {
+	color: $color-secundario;
+}
