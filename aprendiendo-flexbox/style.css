@@ -1,0 +1,174 @@
+/*VARIABLES*/
+:root {
+	--rojo: red;
+}
+
+* {
+	font-family: Arial, Helvetica, sans-serif;
+	text-align: center;
+	background: #ccc;
+}
+
+.caja {
+	background: #333;
+	font-size: 20px;
+	font-weight: bold;
+	text-align: center;
+	color: white;
+	padding: 20px;
+	border: 4px solid #222;
+	margin: 10px;
+}
+.caja.red {
+	/*USO DE VARIABLE*/
+	background: var(--rojo);
+}
+
+.caja.green {
+	background: green;
+}
+.caja.blue {
+	background: blue;
+}
+.caja.orange {
+	background: orange;
+}
+
+#layout {
+	border: 3px solid black;
+	padding: 10px;
+	display: inline-flex;
+	margin-bottom: 30px;
+}
+
+#layout2 {
+	border: 3px solid black;
+	padding: 10px;
+	display: flex;
+	/*flex-wrap: wrap;
+	flex-direction: row;*/
+	flex-flow: row wrap; /*flex flow es lo mismo que flex-wrap + flex-direction*/
+	margin-bottom: 30px;
+}
+
+#layout3 {
+	border: 3px solid black;
+	padding: 10px;
+	display: inline-flex;
+	flex-direction: column-reverse;
+	margin-bottom: 30px;
+}
+
+#layout4 {
+	display: flex;
+}
+
+#layout4 .blue {
+	order: 1;
+}
+
+#layout4 .green {
+	order: 2;
+}
+
+#layout4 .red {
+	order: 4;
+}
+
+#layout4 .orange {
+	order: 3;
+}
+
+#layout5 {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+#layout5 .caja {
+	flex-grow: 1;
+}
+
+#layout5 .red {
+	flex-grow: 5;
+}
+
+#layout5 .orange {
+	flex-grow: 5;
+}
+
+#layout6 {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+#layout6 .caja {
+	flex-grow: 1;
+}
+
+#layout6 .orange {
+	flex-basis: 100%;
+}
+
+#layout7 {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-end;
+}
+
+#layout8 {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+}
+
+#layout9 {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+#layout10 {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+#layout11 {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+#layout12 {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+}
+
+#layout13 {
+	height: 500px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+#layout13 .caja {
+	flex-grow: 1;
+}
+
+#layout13 .red {
+	align-self: flex-start;
+}
+
+#layout13 .green {
+	align-self: center;
+}
+
+#layout13 .blue {
+	align-self: center;
+}
+
+#layout13 .orange {
+	align-self: flex-end;
+}
